@@ -13,6 +13,11 @@ for i in yourname:
     if i in love:
         love_num += 1
 
-match_percentage = str(true_num) + str(love_num)
-print(f"You both have a match of %{match_percentage}")
+love_score = int(str(true_num) + str(love_num))
 
+if love_score < 10 or love_score > 90:
+    print(f"Your score is {love_score}, you go together like coke and mentos")
+elif love_score >= 40 and love_score <= 50:
+    print(f"Your score is {love_score}, you are alright together.")
+else:
+    print(f"Your score is {love_score}") 
